@@ -8,7 +8,8 @@ class FlowCoordinator {
     }
     
     public func start() {
-        let vc = HomeViewController()
+        let viewModel = HomeViewModel()
+        let vc = HomeViewController(viewModel: HomeViewModel())
         navController.pushViewController(vc, animated: false)
     }
 }
